@@ -17,10 +17,12 @@ h3 {
 
 h1 {
 	font-size: 84px;
+	text-align: center;
 }
 
 h2 {
 	font-size: 48px;
+	text-align: left;
 }
 
 h3 {
@@ -93,4 +95,26 @@ p {
 	border: 1px solid var(--primary-color);
 	box-shadow: var(--box-shadow);
 	padding: 20px 15px;
+}
+
+@media (max-width: 576px) {
+	h1 {
+		font-size: 48px;
+		line-height: 1.5;
+	}
+
+	h2 {
+		font-size: 32px;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.project-link {
+		display: block;
+		text-align: center;
+		margin: 0 20px;
+	}
 }
